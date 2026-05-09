@@ -1917,13 +1917,14 @@ body {
   background:
     linear-gradient(135deg, rgba(9, 16, 18, 0.96), rgba(11, 13, 16, 1) 48%, rgba(17, 21, 24, 1)),
     var(--background-color);
+  font-size: 14px;
   letter-spacing: 0;
 }
 
 body,
 p,
 li {
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 a:hover {
@@ -1936,7 +1937,7 @@ a:hover {
 }
 
 .header .logo h1 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -1953,8 +1954,20 @@ a:hover {
 
   .navmenu a,
   .navmenu a:focus {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
+  }
+}
+
+.navmenu a,
+.navmenu a:focus {
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .navmenu a,
+  .navmenu a:focus {
+    font-size: 13px;
   }
 }
 
@@ -1975,7 +1988,7 @@ section,
 
 .section-title h2 {
   color: var(--premium-teal);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 1.5px;
 }
@@ -1987,7 +2000,7 @@ section,
 
 .section-title div {
   color: var(--heading-color);
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: clamp(22px, 2.4vw, 32px);
   font-weight: 800;
   line-height: 1.15;
   text-transform: none;
@@ -2025,7 +2038,7 @@ section,
   background: rgba(79, 183, 167, 0.08);
   padding: 8px 13px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2035,16 +2048,16 @@ section,
   max-width: 850px;
   margin: 22px 0 18px;
   color: var(--heading-color);
-  font-size: clamp(42px, 7vw, 84px);
+  font-size: clamp(30px, 5vw, 56px);
   font-weight: 800;
-  line-height: 0.98;
+  line-height: 1.05;
 }
 
 .hero .hero-subtitle {
   max-width: 720px;
   color: rgba(216, 222, 228, 0.86);
-  font-size: clamp(18px, 2vw, 24px);
-  line-height: 1.55;
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: 1.5;
 }
 
 .hero .btn-get-started,
@@ -2056,6 +2069,7 @@ section,
   background: linear-gradient(135deg, #f2d58e, var(--accent-color));
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 18px 40px rgba(200, 164, 93, 0.22);
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0;
 }
@@ -2069,12 +2083,14 @@ section,
 }
 
 .hero .btn-watch-video {
+  font-size: 13px;
   margin-left: 0;
   color: var(--heading-color);
 }
 
 .hero .btn-watch-video i {
   color: var(--premium-teal);
+  font-size: 22px;
 }
 
 .hero-metrics {
@@ -2096,7 +2112,7 @@ section,
   display: block;
   color: var(--accent-color);
   font-family: var(--heading-font);
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -2104,7 +2120,7 @@ section,
   display: block;
   margin-top: 8px;
   color: rgba(216, 222, 228, 0.78);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -2132,12 +2148,12 @@ section,
 
 .about .content h2 {
   margin-bottom: 20px;
-  font-size: clamp(26px, 3vw, 40px);
+  font-size: clamp(20px, 2.4vw, 30px);
 }
 
 .about .content p {
   color: rgba(216, 222, 228, 0.82);
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .profile-highlights {
@@ -2155,6 +2171,7 @@ section,
   border: 1px solid var(--premium-muted-border);
   background: rgba(18, 22, 27, 0.78);
   color: var(--heading-color);
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -2184,7 +2201,7 @@ section,
 .details .features-item h3 {
   margin: 18px 0;
   color: var(--heading-color);
-  font-size: clamp(24px, 3vw, 34px);
+  font-size: clamp(20px, 2.4vw, 28px);
   line-height: 1.2;
 }
 
@@ -2223,7 +2240,18 @@ section,
 
 .details .certification-entry h3,
 .education-entry h3 {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.details .features-item p,
+.details .features-item li,
+.details .certification-entry p,
+.details .certification-entry li,
+.education-entry p,
+.education-entry span,
+.contact .info-item p,
+.contact .info-item a {
+  font-size: 13px;
 }
 
 .education-panel {
@@ -2269,7 +2297,7 @@ section,
   color: var(--heading-color);
   background: linear-gradient(135deg, rgba(200, 164, 93, 0.22), rgba(79, 183, 167, 0.13));
   border-top: 1px solid var(--premium-muted-border);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .stats .skill-card:hover {
@@ -2310,6 +2338,7 @@ section,
 
 .contact .info-item h3 {
   color: var(--heading-color);
+  font-size: 16px;
 }
 
 .contact .info-item p,
@@ -2331,6 +2360,7 @@ section,
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   min-height: 48px;
+  font-size: 13px;
   border-radius: 6px;
   background: rgba(9, 13, 16, 0.88);
   border: 1px solid var(--premium-muted-border);
@@ -2350,11 +2380,12 @@ section,
 }
 
 .footer .footer-about .logo span {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .footer .footer-about p,
 .footer .footer-links ul a {
+  font-size: 13px;
   color: rgba(216, 222, 228, 0.72);
 }
 
@@ -2389,7 +2420,19 @@ section,
   }
 
   .header .logo h1 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .section-title div {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero .hero-subtitle {
+    font-size: 14px;
   }
 
   .hero .hero-actions {
